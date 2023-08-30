@@ -19,9 +19,9 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    public void shouldBuy1000() {
+    public void shouldNotBuy1000() {
 
-        Assert.assertEquals(service.remain(1000), 1000);
+        Assert.assertEquals(service.remain(1000), null);
     }
 
 }
